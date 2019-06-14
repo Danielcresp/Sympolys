@@ -9,6 +9,22 @@
 
 */
 
-body{
-    background-color: rebeccapurple;
+
+/* HEADER */
+.img-logo{
+    width: 20%;
+    height: 20%;
+}
+.nav-item.dropdown a{
+    color: blueviolet;
+    padding: 10px;
+}
+
+.nav.navbar-nav .nav-item .nav-link{
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar .navbar-brand{
+    width: 200px;
 }
