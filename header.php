@@ -29,34 +29,21 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Porfolio</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Shop</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Page</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas</a>
-                <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Contacto</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#"class="dropdown-item">Contacto</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contacto</a>
-            </li>
-        </ul>
+          <?php 
+                $args = array(
+                        'theme_location' => 'header-menu',
+                        'depth'         => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                        'menu_class' => 'nav navbar-nav',
+                        'container' => 'nav-link',
+                        'container_class' => 'nav-link',
+                        'fallback_cb'   => false,
+                        'add_li_class'  => 'nav-item',
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'            => new WP_Bootstrap_Navwalker(),     
+                    );
+                    wp_nav_menu( $args);
+                    //menu
+        ?>
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a href=""><span class="fas fa-shopping-cart"></span></a>
