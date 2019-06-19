@@ -31,6 +31,7 @@ function sympolys_menus(){
         'header-menu' => __('Header Menu','youeat'),
         'social-menu' => __('Social Menu','youeat'),
         'footer-menu' => __('Header Menu','youeat'),
+        'terminos-menu' => __('Terminos Menu','youeat'),
     ));
 }
 // Agregar clases en el menu 
