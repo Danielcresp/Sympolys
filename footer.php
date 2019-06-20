@@ -1,4 +1,5 @@
-    <footer class="footer container">
+    <footer class="footer container-fluid">
+        <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <img class="img-logo-footer" src="<?php echo get_template_directory_uri(); ?>/assets/img/Synfonypoly.png" alt="imagen">
@@ -55,6 +56,7 @@
         ?>
         
             </div>
+        </div>
         </div>
     </footer>
     <?php wp_footer(); ?>

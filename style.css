@@ -11,6 +11,10 @@
 
 
 /* HEADER */
+header{
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+}
 .img-logo{
     width: 20%;
     height: 20%;
@@ -28,6 +32,11 @@
 }
 .navbar .navbar-brand{
     width: 200px;
+}
+/* carousel */
+.carousel-inicio{
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
 }
  
 /* FOOTER */

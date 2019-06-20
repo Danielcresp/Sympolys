@@ -20,37 +20,39 @@
     <title>Sympolys</title>
 </head>
 <body <?php body_class(); ?>>
-<header class="container">
+<header class="container-fluid">
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a href="#" class="navbar-brand">
-        <img class="img-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Synfonypoly.png" alt="imagen">
-    </a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-          <?php 
-                $args = array(
-                        'theme_location' => 'header-menu',
-                        'depth'         => 2, // 1 = no dropdowns, 2 = with dropdowns.
-                        'menu_class' => 'nav navbar-nav',
-                        'container' => 'nav-link',
-                        'container_class' => 'nav-link',
-                        'fallback_cb'   => false,
-                        'add_li_class'  => 'nav-item',
-                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker'            => new WP_Bootstrap_Navwalker(),     
-                    );
-                    wp_nav_menu( $args);
-                    //menu
-        ?>
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a href=""><span class="fas fa-shopping-cart"></span></a>
-                <a href=""><span class="fas fa-search"></span></a>
-            </li>
-        </ul>
-    </div>
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            <img class="img-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Synfonypoly.png" alt="imagen">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <?php 
+                    $args = array(
+                            'theme_location' => 'header-menu',
+                            'depth'         => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                            'menu_class' => 'nav navbar-nav',
+                            'container' => 'nav-link',
+                            'container_class' => 'nav-link',
+                            'fallback_cb'   => false,
+                            'add_li_class'  => 'nav-item',
+                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                            'walker'            => new WP_Bootstrap_Navwalker(),     
+                        );
+                        wp_nav_menu( $args);
+                        //menu
+            ?>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href=""><span class="fas fa-shopping-cart"></span></a>
+                    <a href=""><span class="fas fa-search"></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>   
 </nav>
 </header>
     
