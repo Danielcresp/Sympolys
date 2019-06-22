@@ -27,4 +27,14 @@
   </a>
 </div>
 </div>
+<section class="container story">
+  <h1 class="h1-story">OUR STORY</h1>
+  <h3 class="h3-story">Lorem Ipsum is simply dummy text of the printing</h3>
+  <p class="p-story">Lorem Ipsum has been the industry's standard dummy
+     text ever since the 1500s, when an unknown printer 
+     took a galley of type and scrambled it to make a type
+      specimen book. It has survived not only 
+    five centuries, but also the leap into electronic
+     typesetting, remaining essentially unchanged.</p>
+</section>
 <?php get_footer(); ?>
